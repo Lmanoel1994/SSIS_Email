@@ -20,16 +20,16 @@ Como Enviar Email via **Integration Services**
 
 
 # Selecionando as Variaveis 
-10 -  Irá abri uma Janela na qual terá que seleciona as variaveis criadas **(Email, Senha)**
+10 -  Irá abri uma Janela na qual terá que seleciona as variaveis criadas **(Email, Senha)** <br />
 ![alt text](https://github.com/Lmanoel1994/SSIS_Email/blob/master/pictures/3.png) <br />
 
 # Editando o Script
-11 - Clique em **Editar Script **
+11 - Clique em **Editar Script ** <br />
 ![alt text](https://github.com/Lmanoel1994/SSIS_Email/blob/master/pictures/4.png) <br />
 
 
 # Criando o Componente 
-12 - Copie o Script 
+12 - Copie o Script <br />
 ```
 using System;
 using System.Net;
@@ -42,7 +42,7 @@ namespace ST_54b089ce909345e09fd19be14c685402{
             String Email = Dts.Variables["Email"].Value.ToString(); 
             String Senha = Dts.Variables["Senha"].Value.ToString(); 
             SmtpClient cliente = new SmtpClient();
-            cliente.Host = "smtp.gmail.com";
+            cliente.Host = "smtp";
             cliente.Port = 587; 
             cliente.EnableSsl = true;
             NetworkCredential MeuEmail = new NetworkCredential(Email, Senha);
