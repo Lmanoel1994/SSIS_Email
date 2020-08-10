@@ -65,8 +65,34 @@ namespace ST_54b089ce909345e09fd19be14c685402{
         #endregion
     }}
 ```
+ <br />
 
+13 - Adicione as seguintes bibliotecas  <br />
+**system** <br />
+**System.Net** <br />
+**System.Net.Mail** <br />
 
+14 - Adicione as variaveis **Email e Senha** <br />
 
+15 - Adicione o **SMTP** do seu email no meu caso estou usando o Gmail <br />
 
+16 - Adicione as **credenciais** do email  <br />
+
+17 - Editando o Email <br />
+**Escreva o Cabecario do Email**  <br />
+**A mensagem que gostaria de enviar** <br />
+**Titulo da Mensagem** <br />
+**Email do destinatio** <br />
+**Email de quem deseja deixar em copia** <br />
+**Assunto do Email** <br />
+Feito isso Salve o Script e feche a janela  <br />
+![alt text](https://github.com/Lmanoel1994/SSIS_Email/blob/master/pictures/5.png) <br />
+
+# Executando o Componente
+18 - Execute o seu pacote  <br />
+![alt text](https://github.com/Lmanoel1994/SSIS_Email/blob/master/pictures/6.png) <br />
+ 
+ **Verifique se o email foi enviado com sucesso**
+ ![alt text](https://github.com/Lmanoel1994/SSIS_Email/blob/master/pictures/7.png) <br />
+ 
  
